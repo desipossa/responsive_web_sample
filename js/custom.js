@@ -69,7 +69,8 @@ $(function () {
         loop: true,
         speed: 2000,
         slidesPerView: "auto",
-        centeredSlides: true,
+        spaceBetween: 30,
+        // centeredSlides: true,
         autoplay: {
             delay: 0,
             disableOnInteraction: false,

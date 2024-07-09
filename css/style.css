@@ -332,6 +332,7 @@ body {
 
 .main051 .inner .slide {
     display: flex;
+    align-items: flex-start;
     overflow: hidden;
 }
 
@@ -339,23 +340,22 @@ body {
     flex: 1;
 }
 
-.main051 .inner .main051Slide {
-    height: 600px;
-}
 
-.main051 .inner .main051Slide .itm {
-    height: 300px;
-}
 
-.main051 .inner .main051Slide img {
-    height: 300px;
-}
 
 .main051 .swiper-wrapper {
     transition-timing-function: linear;
 }
 
-.main051 .inner .right {
+.main051 .inner .swiper {
     margin: -150px 0;
     height: 750px;
+}
+
+.main051 .inner .swiper .itm {
+    height: 50%;
+}
+
+.main051 .inner .right {
+    transform: translate(0, -150px);
 }
