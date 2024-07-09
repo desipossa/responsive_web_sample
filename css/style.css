@@ -144,9 +144,218 @@ body {
 
 
 
-#content {
+
+
+.mainVisual {}
+
+.mainVisual .mainVisualSlide .itm {
     position: relative;
-    z-index: 1;
-    background: #333333;
-    height: 500px;
+    height: 50rem;
+}
+
+.mainVisual .mainVisualSlide .itm01 {
+    background: url(../images/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainVisualSlide .itm02 {
+    background: url(../images/main_visual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainVisualSlide .itm03 {
+    background: url(../images/main_visual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 117rem;
+    width: 100%;
+}
+
+.mainVisual .itm .txt strong {
+    display: block;
+    margin-bottom: 2.4rem;
+    font-size: 10rem;
+    font-weight: 900;
+    color: var(--white-color);
+    transform: translate(0, 10rem);
+    opacity: 0;
+
+
+}
+
+.mainVisual .itm .txt p {
+    color: var(--white-color);
+    transform: translate(0, 10rem);
+    opacity: 0;
+
+
+}
+
+.mainVisual .itm.on .txt strong {
+    transform: translate(0, 0);
+    opacity: 1;
+
+    transition: 0.5s;
+}
+
+.mainVisual .itm.on .txt p {
+    transform: translate(0, 0);
+    opacity: 1;
+
+    transition: 0.5s 0.5s;
+}
+
+
+.mainVisual2 .mainVisualSlide2 .itm {
+    position: relative;
+    height: 50rem;
+}
+
+.mainVisual2 .mainVisualSlide2 .itm01 {
+    background: url(../images/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual2 .mainVisualSlide2 .itm02 {
+    background: url(../images/main_visual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual2 .mainVisualSlide2 .itm03 {
+    background: url(../images/main_visual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual2 .itm .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 117rem;
+    width: 100%;
+}
+
+.mainVisual2 .itm .txt strong {
+    display: block;
+    margin-bottom: 2.4rem;
+    font-size: 10rem;
+    font-weight: 900;
+    color: var(--white-color);
+    transform: translate(0, 10rem);
+    opacity: 0;
+
+
+}
+
+.mainVisual2 .itm .txt p {
+    color: var(--white-color);
+    transform: translate(0, 10rem);
+    opacity: 0;
+
+
+}
+
+.mainVisual2 .itm.on .txt strong {
+    transform: translate(0, 0);
+    opacity: 1;
+
+    transition: 0.5s;
+}
+
+.mainVisual2 .itm.on .txt p {
+    transform: translate(0, 0);
+    opacity: 1;
+
+    transition: 0.5s 0.5s;
+}
+
+.txtSlide {
+    padding: 12rem 0;
+}
+
+.txtSlide .txt_wrap {
+    display: flex;
+    overflow: hidden;
+}
+
+.txtSlide .txt_wrap .txt {
+    font-size: 10rem;
+    font-weight: 900;
+    white-space: nowrap;
+
+    animation: txtMove 5s infinite linear;
+}
+
+/* .txtSlide .txt_wrap .txt::first-letter {
+    -webkit-text-stroke: 1px var(--font-color);
+    color: transparent;
+} */
+
+@keyframes txtMove {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.mainEvent {
+    padding: 12rem 0;
+    background: var(--background-color);
+}
+
+.mainEvent .inner {
+    overflow: hidden;
+}
+
+.mainEvent .mainEventSlide {
+    margin: 0 -1.5rem;
+}
+
+.mainEvent .mainEventSlide .itm {
+    margin: 0 1.5rem;
+}
+
+.mainEvent2 {
+    padding: 12rem 0;
+}
+
+.main051 {}
+
+.main051 .inner {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+.main051 .inner .slide {
+    display: flex;
+    overflow: hidden;
+}
+
+.main051 .inner>* {
+    flex: 1;
+}
+
+.main051 .inner .main051Slide {
+    height: 600px;
+}
+
+.main051 .inner .main051Slide .itm {
+    height: 300px;
+}
+
+.main051 .inner .main051Slide img {
+    height: 300px;
+}
+
+.main051 .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+.main051 .inner .right {
+    margin: -150px 0;
+    height: 750px;
 }
